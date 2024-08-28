@@ -4,7 +4,9 @@
 
 > Create beautiful itineraries with ease.
 
-Travel Buddy is a powerful web application built with Next.js that helps users create personalized travel itineraries. Whether you're planning a weekend getaway or a week-long adventure, Travel Buddy streamlines the process of organizing your perfect trip.
+## Solution
+
+Travel Buddy is an AI-powered solution that revolutionizes trip planning by generating personalized itineraries tailored to user preferences. It simplifies the process with seamless day-wise organization and instant notifications, ensuring a hassle-free experience for travelers. Built on the foundation of open-source technologies, Travel Buddy combines the strengths of AI and a user-friendly interface to meet the demands of modern travelers, offering an efficient and enjoyable way to plan journeys.
 
 ## Features
 
@@ -118,37 +120,59 @@ To reproduce the API keys and secrets, ensure that sensitive information is mana
 2. Navigate to the project directory:
 
     ```
-    cd aivelnirary/frontend
+    cd aivelnirary
     ```
 
-3. Install dependencies:
+### Running Frontend
+
+1. Navigate to the project directory:
+
+    ```
+    cd frontend
+    ```
+
+
+2. Install dependencies:
 
     ```
     npm install
     ```
 
-4. Create a `.env.local` file in the root directory and add your environment variables:
+3. Create a `.env.local` file in the root directory and add your environment variables:
 
     ```
    NEXTAUTH_SECRET=your_auth_secret_here
    AUTH_GOOGLE_ID=your_google_id
    AUTH_GOOGLE_SECRET=your_google_secret
-   NEXT_PUBLIC_BASE_URL=
-   NEXT_PUBLIC_LIVEBLOCKS_SECRET=your_liveblocks_secret
-   NEXT_PUBLIC_PEXELS_API_KEY=your_pexels_api_key
+   NEXT_PUBLIC_BASE_URL=your_public_base_url
     ```
 
-5. Run the development server:
+4. Run the frontend:
 
     ```
     npm run dev
     ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-### Running Backend and ML Server
+### Running Backend Server
 
-1. Navigate to the backend directory and start the server:
+1. Create a `.env` file in the root directory and add your environment variables:
+
+    ```
+    MONGODB_URL = "YOUR MONGODB URL"
+    NODE_ENV = "development"
+    GEOAPIFY_API_KEY = "YOUR GEOAPIFY API KEY"
+    PORT = 10000
+    ML_API_URL = "YOUR ML API URL"
+    MAIL_USERNAME = "YOUR MAIL USERNAME"
+    MAIL_PASSWORD = "YOUR MAIL PASSWORD"
+    SELF_URL = "YOUR BACKEND SELF URL"
+
+    ```
+
+
+2. Navigate to the backend directory and start the server:
 
     ```
     cd backend
@@ -156,12 +180,21 @@ To reproduce the API keys and secrets, ensure that sensitive information is mana
     npm run dev
     ```
 
+
+### Running ML Server
+
+1. Export your environment variables:
+
+    ```
+    export TOGETHERAI_API_KEY=your_together_ai_key
+    ```
+
 2. Navigate to the ML server directory and start the server using Gunicorn:
 
     ```
     cd ml
     pip install -r requirements.txt
-    gunicorn app:app --bind 0.0.0.0:8000
+    gunicorn app:app
     ```
 
 ## Acknowledgments
