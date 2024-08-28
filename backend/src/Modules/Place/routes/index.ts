@@ -1,0 +1,1 @@
+export { router as placeRoutes } from "./routes";

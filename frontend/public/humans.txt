@@ -1,0 +1,37 @@
+
+   __  ___
+  /  |/  /
+ / /|_/ / 
+/_/  /_/  
+          
+
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DEVELOPER
+
+Mustafa Trunkwala
+Hand crafted design & web development
+
+github.com/TechyMT
+mustafatrunkwala.tech
+linkedin.com/mustafa-trunkwala
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+React
+Next.js
+Tailwind CSS
+Framer Motion
+Magic UI
+
+_______________________________________________________________________________
+
+FONTS
+
+Inter

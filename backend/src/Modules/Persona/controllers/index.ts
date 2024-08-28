@@ -1,0 +1,1 @@
+export { PersonaController } from "./persona.controller";

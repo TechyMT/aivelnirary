@@ -1,0 +1,1 @@
+export { PersonaRepository } from "./persona.repository";
