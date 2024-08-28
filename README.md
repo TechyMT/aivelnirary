@@ -160,7 +160,7 @@ To reproduce the API keys and secrets, ensure that sensitive information is mana
 
     ```
     cd ml
-    npm install
+    pip install -r requirements.txt
     gunicorn app:app --bind 0.0.0.0:8000
     ```
 
