@@ -1,6 +1,6 @@
-# [Travel Buddy]()
+# [Travel Buddy](https://aivelnirary.vercel.app)
 
-![alt text](frontend/public/landing.png)
+![alt text](assets/landing.png)
 
 > Create beautiful itineraries with ease.
 
@@ -67,7 +67,7 @@ Travel Buddy is a powerful web application built with Next.js that helps users c
 - **Vercel** - Frontend deployment
 
 ## Deployed Links
-  [Travel Buddy]()
+  [Travel Buddy](https://aivelnirary.vercel.app)
   
 ## Solution Future Aspects
 
