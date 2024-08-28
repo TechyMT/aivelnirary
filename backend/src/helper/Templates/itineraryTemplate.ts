@@ -58,7 +58,7 @@ export function generateItineraryHtml(itinerary: Itinerary, clientName: string, 
               .banner {
                   width: 100%;
                   height: 300px;
-                  background-image: url('${bannerImageUrl}');
+                  background-image: url('https://picsum.photos/1000/300');
                   background-size: cover;
                   background-position: center;
                   border-radius: 10px;
