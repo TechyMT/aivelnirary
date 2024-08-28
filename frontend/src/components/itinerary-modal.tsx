@@ -139,19 +139,17 @@ const ItineraryModal: React.FC = () => {
         },
       };
 
-      console.log("body", body)
+      const response = axios.post(`${getBaseUrl()}/itinerary`, body);
 
-      // const response = axios.post(`${getBaseUrl()}/itinerary`, body);
+      setLoading(false);
+      update();
 
-      // setLoading(false);
-      // update();
+      toast.success('Itinerary submitted successfully!', {
+        description:
+          'Your itinerary has been submitted successfully. Your itinerary will be emailed to you shortly.',
+      });
 
-      // toast.success('Itinerary submitted successfully!', {
-      //   description:
-      //     'Your itinerary has been submitted successfully. Your itinerary will be emailed to you shortly.',
-      // });
-
-      // router.replace('/');
+      router.replace('/');
     } catch (error) {
       setLoading(false);
       console.error('Error submitting itinerary:', error);
