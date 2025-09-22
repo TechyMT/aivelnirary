@@ -150,6 +150,10 @@ const ItineraryModal: React.FC = () => {
       });
 
       router.replace('/');
+
+      if ((await response).status === 201) {
+        toast.success('Itinerary Mailed Successfully');
+      }
     } catch (error) {
       setLoading(false);
       console.error('Error submitting itinerary:', error);
